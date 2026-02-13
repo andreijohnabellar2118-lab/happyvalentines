@@ -1,0 +1,234 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Valentine's Envelope</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+    <div class="background-decoration bg-flower-1">🌹</div>
+    <div class="background-decoration bg-flower-2">🌹</div>
+    <div class="background-decoration bg-flower-3">🌸</div>
+    <div class="background-decoration bg-flower-4">🌸</div>
+    <div class="background-decoration bg-heart-1">💕</div>
+    <div class="background-decoration bg-heart-2">💕</div>
+    <div class="background-decoration bg-heart-3">💕</div>
+    <div class="background-decoration bg-heart-4">💕</div>
+    <div class="background-decoration bg-bouquet-1">💐</div>
+    <div class="background-decoration bg-bouquet-2">💐</div>
+    <div class="background-decoration bg-spark-1">✨</div>
+    <div class="background-decoration bg-spark-2">✨</div>
+    <div class="background-decoration bg-gift-1">💝</div>
+    <div class="background-decoration bg-gift-2">💝</div>
+    <div class="scene">
+      <div class="envelope-wrapper" id="envelope" tabindex="0" aria-label="Interactive envelope" role="region">
+        <div class="envelope-3d">
+          <!-- Front of envelope -->
+          <div class="envelope-front">
+            <!-- Flap -->
+            <div class="flap">
+              <div class="flap-inner">
+                <div class="flap-decoration">♡</div>
+              </div>
+            </div>
+            <!-- Envelope body -->
+            <div class="body">
+              <div class="envelope-lines"></div>
+              <div class="envelope-stamp"></div>
+              <div class="recipient-text">RIERIE</div>
+              <img src="1a71ae19-5576-47a7-b24a-81ef206dbbc9 (1).jfif" alt="Top Right Image" class="envelope-top-right-img">
+              <div class="design-left">🌹</div>
+              <div class="design-right">🌹</div>
+              <div class="design-corner tl">♡</div>
+              <div class="design-corner tr">♡</div>
+              <div class="design-corner bl">♡</div>
+              <div class="design-corner br">♡</div>
+              <div class="design-top-left">💕</div>
+              <div class="design-top-right">💕</div>
+              <div class="design-bottom-left">💕</div>
+              <div class="design-bottom-right">💕</div>
+              <div class="design-center-left">✨</div>
+              <div class="design-center-right">✨</div>
+              <div class="design-top">💝</div>
+              <div class="design-bottom">💝</div>
+              <div class="design-extra-1">🌸</div>
+              <div class="design-extra-2">🌸</div>
+              <div class="design-extra-3">🌸</div>
+              <div class="design-extra-4">🌸</div>
+              <div class="design-extra-5">💐</div>
+              <div class="design-extra-6">💐</div>
+              <div class="design-center-bouquet">💐</div>
+              <div class="design-line-top"></div>
+              <div class="design-line-bottom"></div>
+              <div class="address-area">
+                <div class="address-line">HAPPY VALENTINES</div>
+                <div class="address-line"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Letter inside -->
+          <div class="letter-container">
+            <div class="letter" id="letter">
+              <div class="content">
+                <h1 id="title">MY HAPPY VALENTINES BABY KO</h1>
+                <p id="message">My Dearest Rierie,</p>
+                <p>You are special to me. Thank you for being part of my life. ♡</p>
+                <p>Every moment with you is precious and unforgettable. You make my world brighter and my heart fuller. With you, I have found a love that goes beyond words and simple gestures.</p>
+                <p>Your smile lights up my darkest days, and your kindness touches my soul in ways I never knew possible. The gentle way you care for others shows the beautiful heart that beats within you.</p>
+                <p>I appreciate your laughter, your warmth, and the way you make me feel so loved and valued. When I'm with you, all my worries fade away, and I'm reminded of what truly matters in life.</p>
+                <p>You are my sunshine, my joy, and my reason to smile every single day. Your presence brings color to my world, and your love gives me strength I never knew I had.</p>
+                <p>Every small moment we share becomes a cherished memory—from late night conversations to simple walks together. I find myself wanting to experience every moment of life with you by my side.</p>
+                <p>Your dreams inspire me, your determination motivates me, and your love transforms me into a better person. You see the best in me even when I doubt myself, and that means everything.</p>
+                <p>As I look into the future, all I see is you. A lifetime of adventures, laughter, and unwavering love. You are not just my love; you are my home, my peace, and my reason for believing in forever.</p>
+                <p>I love you more with each passing moment. Happy Valentine's Day to the most wonderful person in my life! 💕</p>
+                <p>You are my greatest blessing, my deepest joy, and the love of my life.</p>
+                <p>Forever yours, completely and devotedly, with all my heart and soul.</p>
+                <p>Again baby, happy Valentine's day po! I hope you like this. I hope you're having a great day. I just wanna know that I love you so much and I'll keep loving you till the end of my days. Always be careful in everything you do poo. We're almost done in school. Thank you for helping me, supporting me in all I do po. Thank you for being always my safe place, my baby. I love you so much that even words can't express it po. Again baby, I hope you like it hehe, yun lang. HAPPY VALENTINE AGAIN BABI KOOOOO 💕</p>
+                <p>Again baby happy valentine's day po I hope you like this I hope your having a great day I just wanna know that I love you so much an I'll keep loving you till the end of my days always be careful in everything you do poo were almost done in school thank you helping me supporting me in all I do po thank you for being always my safe place my baby I love you so much that even words can express it po again baby I hope you like it hehe yun Lang HAPPY VALENTINE AGAIN BABI KOOOOO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="letter-section" id="letterSection">
+    <div class="letter-full">
+      <img src="valentine1.jfif" alt="Valentine Heart" class="valentine-heart-bg">
+      <div class="letter-background-design letter-bg-1">🌹</div>
+      <div class="letter-background-design letter-bg-2">🌹</div>
+      <div class="letter-background-design letter-bg-3">💕</div>
+      <div class="letter-background-design letter-bg-4">💕</div>
+      <div class="letter-background-design letter-bg-5">✨</div>
+      <div class="letter-background-design letter-bg-6">✨</div>
+      <div class="letter-background-design letter-bg-7">💐</div>
+      <div class="letter-background-design letter-bg-8">💐</div>
+      <div class="letter-background-design letter-bg-9">🌸</div>
+      <div class="letter-background-design letter-bg-10">🌸</div>
+      <div class="letter-background-design letter-bg-11">♡</div>
+      <div class="letter-background-design letter-bg-12">♡</div>
+      <div class="letter-background-design letter-bg-13">💝</div>
+      <div class="letter-background-design letter-bg-14">💝</div>
+      <div class="letter-content">
+        <img src="49996933-c19f-4a26-84d6-db914844e4ea.jfif" alt="Letter Heart" class="valentine-heart">
+        <img src="1166b9a3-d601-4d27-80d4-4890a846f78c.jfif" alt="Letter Heart 2" class="valentine-heart">
+        <h2 id="letterTitle">HAPPY VALENTINES BABY KOO</h2>
+        <p id="letterMessage">My Most Beloved Rierie,</p>
+        <p>You are special to me. Thank you for being part of my life. ♡</p>
+        <p>Every moment with you is a treasure beyond measure. Your smile brightens my darkest days, and your presence makes everything feel complete and perfect.</p>
+        <p>I find myself constantly amazed by your beauty, not just on the outside, but the stunning beauty that radiates from your heart and soul.</p>
+        <p>I appreciate your kindness, your infectious laughter, and the way you make me feel so incredibly loved and valued every single day.</p>
+        <p>On this special Valentine's Day, I want to remind you just how much you truly mean to me. You are my sunshine, my joy, my peace, and my reason to smile.</p>
+        <p>You inspire me to be a better person, and I am forever grateful for your love, your support, and your unwavering presence in my life.</p>
+        <p>You have captured my heart completely, and I promise to cherish, love, and adore you for all the days of my life.</p>
+        <p>Happy Valentine's Day to the most wonderful, beautiful, and amazing person I have ever known. Forever grateful, forever yours, with all my heart and soul. 💕💕💕</p>
+        <p>All my love,Again baby Again baby happy valentine's day po I hope you like this I hope your having a great day I just wanna know that I love you so much an I'll keep loving you till the end of my days always be careful in everything you do poo were almost done in school thank you helping me supporting me in all I do po thank you for being always my safe place my baby I love you so much that even words can express it po again baby I hope you like it hehe yun Lang HAPPY VALENTINE AGAIN BABI KOOOOO</p>
+          <br>ILOVEYOUSOMUCH BABY KOOO sorry eto lang nagawa ko sayo babyyy pero i hope you like it😊</p>
+        <button class="bouquet-btn" id="bouquetBtn">Click it 🌹</button>
+        <button id="memoriesOpenBtn" class="bouquet-btn">Our Memories</button>
+        <button id="saveMemoriesBtn" class="bouquet-btn">Save Our Memories</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Memories modal -->
+  <div class="memories-modal" id="memoriesModal">
+    <div class="memories-overlay" id="memoriesOverlay">
+      <div class="memories-content">
+        <button class="close-memories" id="closeMemories">×</button>
+        <h3>Our Memories</h3>
+        <div class="memories-controls">
+          <input type="file" id="memoriesInput" accept="image/*" multiple style="display:none">
+          <button id="addMemoriesBtn" class="bouquet-btn">Add Images</button>
+          <span id="memoriesCapacity" class="capacity-display">0/20</span>
+        </div>
+        <div class="memories-grid" id="memoriesGrid" aria-live="polite">
+          <div class="memories-bouquet" id="memoriesBouquet">💐</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Save Memories modal -->
+  <div class="memories-modal" id="saveMemoriesModal">
+    <div class="memories-overlay" id="saveMemoriesOverlay">
+      <div class="memories-content">
+        <button class="close-memories" id="closeSaveMemories">×</button>
+        <h3>Save Our Memories</h3>
+        <div class="memories-controls">
+          <input type="file" id="saveMemoriesInput" accept="image/*" multiple style="display:none">
+          <button id="addSaveMemoriesBtn" class="bouquet-btn">Add Images</button>
+        </div>
+        <div class="memories-grid" id="saveMemoriesGrid" aria-live="polite">
+          <div class="memories-bouquet" id="saveMemoriesBouquet">💖</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bouquet-display" id="bouquetDisplay">
+    <div class="bouquet-overlay" id="bouquetOverlay">
+      <div class="heart-circle">
+        <div class="petal-heart petal-1" data-heart="1"><img src="" alt="Heart 1" class="heart-img"></div>
+        <div class="petal-heart petal-2" data-heart="2"><img src="" alt="Heart 2" class="heart-img"></div>
+        <div class="petal-heart petal-3" data-heart="3"><img src="" alt="Heart 3" class="heart-img"></div>
+        <div class="petal-heart petal-4" data-heart="4"><img src="" alt="Heart 4" class="heart-img"></div>
+        <div class="petal-heart petal-5" data-heart="5"><img src="" alt="Heart 5" class="heart-img"></div>
+        <div class="petal-heart petal-6" data-heart="6"><img src="" alt="Heart 6" class="heart-img"></div>
+        <div class="petal-heart petal-7" data-heart="7"><img src="" alt="Heart 7" class="heart-img"></div>
+        <div class="petal-heart petal-8" data-heart="8"><img src="" alt="Heart 8" class="heart-img"></div>
+        <div class="petal-heart petal-9" data-heart="9"><img src="" alt="Heart 9" class="heart-img"></div>
+        <div class="petal-heart petal-10" data-heart="10"><img src="" alt="Heart 10" class="heart-img"></div>
+        <div class="petal-heart petal-11" data-heart="11"><img src="" alt="Heart 11" class="heart-img"></div>
+        <div class="petal-heart petal-12" data-heart="12"><img src="" alt="Heart 12" class="heart-img"></div>
+        <div class="petal-heart petal-13" data-heart="13"><img src="" alt="Heart 13" class="heart-img"></div>
+        <div class="petal-heart petal-14" data-heart="14"><img src="" alt="Heart 14" class="heart-img"></div>
+      </div>
+      <div class="huge-bouquet">💐</div>
+    </div>
+  </div>
+  
+  <div class="heart-image-display" id="heartImageDisplay">
+    <div class="heart-image-container">
+      <img id="heartImageImg" src="" alt="Heart" class="heart-image">
+    </div>
+  </div>
+
+  <!-- Image edit modal -->
+  <div class="image-edit-modal" id="imageEditModal">
+    <div class="image-edit-content">
+      <button class="close-edit-modal" id="closeEditModal">×</button>
+      <h3>Edit Memory</h3>
+      <form class="image-edit-form">
+        <div class="form-group">
+          <label for="editDay">Day</label>
+          <input type="number" id="editDay" min="1" max="31" placeholder="01">
+        </div>
+        <div class="form-group">
+          <label for="editMonth">Month</label>
+          <input type="text" id="editMonth" placeholder="January" maxlength="20">
+        </div>
+        <div class="form-group">
+          <label for="editYear">Year</label>
+          <input type="number" id="editYear" placeholder="2025">
+        </div>
+        <div class="form-group">
+          <label for="editTime">Time</label>
+          <input type="time" id="editTime">
+        </div>
+        <div class="form-buttons">
+          <button type="button" class="btn-save" id="saveEditBtn">Save</button>
+          <button type="button" class="btn-replace" id="replaceImageBtn">Replace Image</button>
+          <button type="button" class="btn-delete" id="deleteImageBtn">Delete</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
